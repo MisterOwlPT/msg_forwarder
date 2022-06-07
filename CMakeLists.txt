@@ -18,7 +18,7 @@ include_directories(
 )
 
 catkin_install_python(
-  PROGRAMS scripts/msg_forwarder.py 
+  PROGRAMS scripts/forwarder.py 
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
