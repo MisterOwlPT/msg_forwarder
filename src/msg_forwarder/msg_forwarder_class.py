@@ -89,7 +89,7 @@ class MsgForwarder:
             except KeyError as e:
                 raise e
 
-        except IOError as e:
+        except FileNotFoundError as e:
             raise e
 
     def connect_rosbridge(self, rosbridge_host, rosbridge_port):
