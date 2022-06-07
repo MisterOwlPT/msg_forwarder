@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>msg_forwarder</name>
+  <version>1.0.0</version>
+  <description>The msg_forwarder package</description>
+
+  <maintainer email="pedro.m.melo@inesctec.pt">Pedro Melo</maintainer>
+  <maintainer email="rafael.l.arrais@inesctec.pt">Rafael Arrais</maintainer>
+  <maintainer email="sergio.d.marinho@inesctec.pt">Sergio Marinho</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy_message_converter</build_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy_message_converter</exec_depend>
+
+</package>

@@ -1,0 +1,10 @@
+---
+remote_topics:
+  -
+    topic: '/chatter'
+    type: 'std_msgs/String'
+
+local_topics:
+  -
+    topic: '/example'
+    type: 'std_msgs/String'
