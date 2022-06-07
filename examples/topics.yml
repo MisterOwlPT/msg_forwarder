@@ -1,10 +1,10 @@
 ---
 remote_topics:
   -
-    topic: '/chatter'
+    topic: '/a'
     type: 'std_msgs/String'
 
 local_topics:
   -
-    topic: '/example'
+    topic: '/b'
     type: 'std_msgs/String'
