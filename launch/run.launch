@@ -2,14 +2,14 @@
 
 <launch>
 
-  <arg name='rosbridge_host' default='127.0.0.1'/>
-  <arg name='rosbridge_port' default='9090'/>
-  <arg name='topics_file' default=''/>
+  <arg name="rosbridge_host" default="127.0.0.1" />
+  <arg name="rosbridge_port" default="9090" />
+  <arg name="topics_file" default="" />
 
-  <node pkg="msg_forwarder" type="msg_forwarder.py" name="msg_forwarder" output="screen">
-      <param name='rosbridge_host' value='$(arg rosbridge_host)' />
-      <param name='rosbridge_port' value='$(arg rosbridge_port)' />
-      <param name='topics_file' value='$(arg topics_file)' />
+  <node pkg="msg_forwarder" type="forwarder.py" name="msg_forwarder" output="screen">
+      <param name="rosbridge_host" value="$(arg rosbridge_host)" />
+      <param name="rosbridge_port" value="$(arg rosbridge_port)" />
+      <param name="topics_file" value="$(arg topics_file)" />
   </node>
 
 </launch>
