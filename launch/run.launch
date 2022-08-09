@@ -3,7 +3,7 @@
 <launch>
 
   <arg name='rosbridge_host' default='127.0.0.1'/>
-  <arg name='rosbridge_port' default=9090/>
+  <arg name='rosbridge_port' default='9090'/>
   <arg name='topics_file' default=''/>
 
   <node pkg="msg_forwarder" type="msg_forwarder.py" name="msg_forwarder" output="screen">
