@@ -1,4 +1,3 @@
-from tkinter import E
 import rospy
 import roslibpy
 import yaml
@@ -8,7 +7,7 @@ from rospy_message_converter import message_converter
 
 class MsgForwarder:
 
-    def __init__(self, topics_file, rosbridge_host ='127.0.0.1', rosbridge_port = 9090):
+    def __init__(self, topics_file, rosbridge_host = '127.0.0.1', rosbridge_port = 9090):
 
         self.remote_topics, self.local_topics = self.extract_topics(topics_file)
         self.rosbridge = self.connect_rosbridge(rosbridge_host, rosbridge_port)
